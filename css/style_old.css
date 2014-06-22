@@ -16,19 +16,19 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   text-rendering: optimizeLegibility;
   /*color: #999;*/
-    color: white;
+    color: black;
 }
 h1
 {
     font-family: 'Quicksand', sans-serif;
     text-transform:uppercase;
-    color: white;
+    color: black;
 }
 h2,h3
 {
     font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
     text-transform:uppercase;
-    color: white;
+    color: black;
 }
 .apice {
   vertical-align: super;
@@ -41,7 +41,7 @@ h2,h3
 
 #intro {
   height: 100%;
-  margin: 0px;
+  margin-top: 60px;
   background: url(../img/background.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -52,78 +52,23 @@ article {
   border-bottom: 10px solid #171717;
 }
 
-#azienda {
-  height: 80%;
-  margin: 0px;
-  background: url(../img/bglennon2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#personale {
-  margin: 0px;
-  height: 80%;
-  background: url(../img/blog.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#galleria {
-  margin: 0px;
-  height: 80%;
-  background: url(../img/things.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#portfolio {
-  margin: 0px;
-  height: 80%;
-  background: url(../img/rasp.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#contatti {
-  margin: 0px;
-  height: 80%;
-  background: url(../img/trips.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} 
-#dove {
-  margin: 0px;
-  height: 80%;
-  background: url(../img/contact.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+#azienda,
+#personale,
+#portfolio,
+#contatti,
+#dove,
 #collaborazioni {
   margin: 0px;
   height: 80%;
-  background: url(../img/contact.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 #footer {
   background: #272727;
   margin: 0px;
-  color: white;
+  color: black;
 }
 #footer a{
-    color: white;
+    color: black;
 }
 #footer a:hover{
     color: #999;
@@ -136,11 +81,10 @@ article {
 #contattitesto,
 #blogtesto,
 #aziendatesto,
-#galleriatesto,
 #dovetesto,
 #collaborazionitesto
  {
-  background: rgba(27, 27, 27, 0.83);
+
 }
 #introtesto {
 margin-top:30px;
@@ -153,7 +97,7 @@ margin-top:30px;
 
 #azienda1,
 #azienda2 {
-  color: white;
+  color: black;
 }
 
 .navbar {

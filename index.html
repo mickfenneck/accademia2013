@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Skippr. A jQuery plugin for creating tasteful slideshows.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/jquery.skippr.css">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <!--Main Style-->
+        <link rel="stylesheet" type="text/css" href="css/style_old.css">
+
+
+        <!--Bootstrap-->
+        <script src="js/bootstrap.min.js"></script>
+        <!--Arrow animation-->
+        <script>
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function (e) {
+                    e.preventDefault();
+
+                    var target = this.hash,
+                    $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                });
+            });
+        </script>
+    </head>
+
+
+
+
+    <body>
+
+        <!--menu navbar-->
+<nav id="menu-nav" class="navbar  navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#intro">accademia2013</a>
+        </div>
+        <!--navbar-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#azienda" title="azienda">azienda</a></li>
+                <li><a href="#personale" title="personale">personale</a></li>
+                <li><a href="#galleria" title="galleria">galleria</a></li>
+                <li><a href="#portfolio" title="portfolio">portfolio</a></li>
+                <li><a href="#collaborazioni" title="collaborazioni">collaborazioni</a></li>
+                <li><a href="#contatti" title="contatti">contatti</a></li>
+                <li><a href="#dove" title="dove">dove</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>  
+
+
+<article id="intro"> 
+    <div id="introtesto" class="row text-center">        
+        <div class="col-md-12">
+            <h1 id="logotitle">accademia 2013<span class="apice">&copy;</span></h1>
+            <img src="img/arrow.png" alt="arrow"/>
+            <h2>restauri - pitture</h2>
+        </div>
+    </div>
+    <div class="arrow">
+        <a href="#azienda">
+            <img src="img/arrow.png" alt="arrow"/>
+        </a>
+    </div>
+</article>   
+
+
+<article id="azienda">
+    <div  id="aziendatesto" class="row text-center">
+        <div>
+            <h1>Azienda</h1>
+            <div id="about1" class="col-md-8 col-md-offset-2">
+                <p>
+                    Accademia2013 srl rappresenta l’evoluzione e la crescita di una precedente realtà nata nel 1999 e fa, da sempre, della serietà e professionalità i principali obiettivi del proprio operato.
+                </p>
+            </div>
+            <div id="azienda1" class="col-md-4 col-md-offset-2">
+                <p>
+Accademia2013 srl è una ditta che opera nel settore edilizio e dell’ interior, inizialmente occupandosi prevalentemente di tinteggiature interne ed esterne e successivamente ampliando la propria attività anche nel campo dei restauri, delle decorazioni e dell’edilizia, nel rispetto dei budget e dei tempi d’intervento preventivamente concordati con la Committenza. 
+                </p>
+            </div>
+            <div id="azienda2" class="col-md-4">
+                <p>
+                    Da sempre si avvale di fornitori e collaboratori esperti e utilizza solo materiali di alta qualità, in grado di soddisfare qualsiasi tipo di richiesta pervenuta sia da privati sia da enti pubblici e commerciali.
+Pur essendo un’ azienda giovane e dinamica, puntualmente pronta a sperimentazioni, idee innovative e nuove tecnologie, garantisce affidabilità, precisione e massima serietà in ogni sua commessa.
+                </p>
+            </div>
+        </div>          
+    </div>
+</article>  
+    
+<article id="personale">
+    <div id="personaletesto" class="row text-center">
+        <div  class="col-md-10 col-md-offset-1">
+            <h1>personale</h1>
+            <p>
+                QUALCHE FOTO E DESCRIZIONE</p>
+        </div>
+    </div>
+</article>
+
+    <div class="hero">
+            <div id="random2">
+                <div style="background-image: url(img/02.png)"></div>
+                <div style="background-image: url(img/04.png)"></div> 
+                <div style="background-image: url(img/05.png)"></div>                   
+                <div style="background-image: url(img/06.png)"></div>
+                <div style="background-image: url(img/07.png)"></div>
+            </div>
+        </div>
+
+
+<article id="portfolio">
+    <div id="portfoliotesto" class="row text-center">
+        <div  class="col-md-10 col-md-offset-1">
+            <h1>portfolio</h1>
+            <div class="col-md-5 col-md-offset-1">
+                JMG Srl - Joint Manufacturing Group (Basiglio - Mi)<br />
+                Stazione di servizio Total (Marco – Tn e Avio – Tn)<br />
+                Cassa rurale (Serravalle all’Adige – Tn)<br />
+                Complesso Città Nova (Rovereto - Tn)<br />
+                Condominio S. Rocco (Rovereto - Tn)<br />
+                SCS ITALIA S.C.R.L. (Basiglio - Mi)<br />
+                Arcotecnica R.E. S.p.A. (Milano)<br />
+                Ristorante Tema (Rovereto - Tn)<br />
+                Hotel al Pescatore (Idro – Bs)<br />
+                Hotel Rovereto (Rovereto - Tn)<br />
+                ACROPOLI SRL (Basiglio - Mi)<br />
+            </div>
+            <div class="col-md-5">
+                Wincor Nixdorf (Basiglio - Mi)<br />
+                Impresa Cazzanelli s.r.l.<br />
+                Impresa Valdadige s.r.l.<br />
+                Salone Mercedes (Trento)<br />
+                Hotel Roby (Jesolo - Ve)<br />
+                Agriturismo (Arco – Tn)<br />
+                Impresa Tomasoni s.r.l.<br />
+                Impresa Berti s.r.l.<br />
+                FORMATT 13 (Milano)<br />
+                Unicredit (Trento)
+            </div>   
+        </div>
+    </div>
+</article>
+    
+    
+<article id="collaborazioni">
+    <div id="collaborazionitesto" class="row text-center">
+        <div  class="col-md-10 col-md-offset-1">
+            <h1>collaborazioni</h1>
+            <p>
+                lista di collaborazioni</p>
+        </div>
+    </div>
+</article>
+
+
+<article id="contatti">
+    <div id="contattitesto" class="row text-center">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>contatti</h1>
+            <p> 
+                ACCADEMIA 2013 srl<br />
+ 
+                Dennis Marchiori<br />
+                 
+                Responsabile Commerciale<br />
+                Corso General Cantore, 19 - 38061 Serravalle (TN)<br />
+                 
+                Sede Legale<br />
+                Via Mosè Bianchi, 71 - 20149 Milano<br />
+                 
+                Ufficio +39 0464 696595<br />
+                Mobile +39 339 7148457<br />
+                P.I. 02284220221<br />
+                 
+                E-Mail info@accademia2013.it
+            </p>
+        </div>
+    </div>
+</article>
+
+
+<article id="dove">
+    <div id="dovetesto"class="row text-center">
+        <div class="col-md-12">
+            <h1>dove</h1>
+        </div>
+        <p>
+            posizionamento su googlemaps
+        </p>
+    </div>
+</article>
+
+<footer>
+    <div id="footer" class="row text-center">
+        <div class="col-md-12">
+            <p>ACCADEMIA 2013 srls Via Mosè Bianchi, 71 - 20149 Milano - info@accademia2013.it - P.I. 02284220221</p>
+        </div>
+    </div>
+</footer> 
+
+
+        
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/jquery.skippr.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#random").skippr();
+                $("#random2").skippr({
+                    navType: 'bubble',
+                    autoPlay: true,
+                    autoPlayDuration: 2000
+                });
+            });
+
+        </script>
+       
+    </body>
+</html>

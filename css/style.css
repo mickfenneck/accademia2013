@@ -3,20 +3,23 @@ body {
 }
 
 #headline {
-    padding: 0.8em;
     background-image: url(../img/background.png);
     background-size: cover;
+    min-height:400px;
 }
 
-#headline img {
-    max-width: 200px;
+#logo {
+    width:400px;
     height:auto;
-    
 }
 
-.imagemerda {
-    max-width: 400px;
-    height:auto;
+h1,h2 {
+    text-transform:uppercase;
+}
+
+.imagez {
+    height:350px;
+    width:auto;
     
 }
 

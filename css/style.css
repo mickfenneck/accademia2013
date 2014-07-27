@@ -6,25 +6,33 @@ body {
     background-image: url(../img/background.png);
     background-size: cover;
     min-height:400px;
+    margin-top:50px;
 }
 
-#logo {
-    width:400px;
-    height:auto;
+#portfolio img,
+#partner img,
+#azienda img,
+#logo
+{
+    width:300px;
+    height:auto;    
 }
 
 h1,h2 {
     text-transform:uppercase;
 }
 
-.imagez {
-    height:350px;
-    width:auto;
-    
-}
-
 @media (min-width: 600px) {
     body {
         font-size:20px;
     }
+}
+
+#menu-nav {
+    background-color:white;
+    color:black;
+}
+
+#map_canvas {
+    height: 400px;
 }

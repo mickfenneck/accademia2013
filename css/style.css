@@ -18,7 +18,6 @@ body {
   text-rendering: optimizeLegibility;
   margin:0px;
 }
-
 #headline {
     background: url(../img/pantone2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -29,19 +28,32 @@ body {
 }
 
 #headcont {
-    margin:100px;
+    margin:50px;
 }
 
 #headline h1 {
+    color: #ececec;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: 'Balthazar', serif;
 }
 
 #headline h2 {
+    color: #ececec;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: 'Open Sans', sans-serif;
+}
+
+#headline img {
+    width:200px;
+    height:auto;
 }
 
 #incipit {
     background-color:rgba(230,230,230,0.5);
+}
+
+.titlez {
+    font-size:48px;
 }
 
 #portfolio img,
@@ -55,12 +67,6 @@ body {
 
 h1,h2 {
     text-transform:uppercase;
-}
-
-@media (min-width: 600px) {
-    body {
-        font-size:20px;
-    }
 }
 
 #menu-nav .navbar-brand {
@@ -81,5 +87,46 @@ h1,h2 {
 #portfolio, #galleria, 
 #partner, #contatti {
     border-bottom: 3px solid #383838;
+    
+}
+
+#azienda,
+#portfolio,
+#partner {
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+#contatti {
+    padding-top:80px;
+}
+
+#headline {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+
+@media (min-width: 600px) {
+    body {
+        font-size:20px;
+    }
+    #headline h1 {
+        font-size: 70px;
+    }
+    #headline h2 {
+        font-size: 50px;
+    }
+    #headline img {
+        width:500px;
+        height:auto;
+    }
+    .titlez {
+        font-size:68px;
+    }
+    #azienda img {
+        width: 460px;
+        height:auto;
+    }
 }
 

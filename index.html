@@ -33,12 +33,17 @@
     <!--GoogleMaps integration-->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
-      function initialize() {
-        var map_canvas = document.getElementById('map_canvas');
-        var map_options = {
-          center: new google.maps.LatLng(45.80741, 11.01662),
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+        function initialize() {
+            var map_canvas = document.getElementById('map_canvas');
+            var map_options = {
+            center: new google.maps.LatLng(45.80741, 11.01662),
+            zoom: 16,
+            scrollwheel: false,
+            navigationControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP            
         }
         var map = new google.maps.Map(map_canvas, map_options)
       }
@@ -91,7 +96,7 @@
     
 <div id="azienda" class="row text-center">
     <div class="col-xs-12 col-md-12">
-        <h2>azienda</h2>
+        <h2 class="titlez">azienda</h2>
     </div>  
     <div class="col-xs-12 col-md-6">
         <img src="img/azienda.png" alt="azienda">
@@ -104,7 +109,7 @@
     
 <div id="portfolio" class="row text-center">
     <div class="col-xs-12 col-md-12">
-        <h2>portfolio</h2>
+        <h2 class="titlez">portfolio</h2>
     </div>  
     <div class="imageport col-xs-12 col-sm-6 col-md-4">
         <img src="img/port1.jpg" alt="portfolio1" class="img-rounded">
@@ -123,7 +128,10 @@
     </div>
     <div class="imageport hidden-xs hidden-sm col-md-4">
         <img src="img/port6.jpg" alt="portfolio6" class="img-rounded">
-    </div> 
+    </div>
+    <div class="imageport col-xs-12 col-sm-12 col-md-12">
+        <a href="portfolio.pdf">altri</a>
+    </div>
 </div>    
     
     
@@ -219,13 +227,17 @@
     
 <div id="partner" class="row text-center">
     <div class="col-xs-12 col-md-12">
-        <h2>partner</h2>
+        <h2 class="titlez">partner</h2>
     </div>
     <div class="imagep col-xs-12 col-md-6">
-        <img src="img/partner1.png" alt="partner1" class="img-rounded">
+        <a href="http://www.formatt13.it">
+            <img src="img/partner1.png" alt="partner1" class="img-rounded">
+        </a>
     </div>
     <div class="imagep col-xs-12 col-md-6">
-        <img src="img/partner2.png" alt="partner2" class="img-rounded">
+        <a href="http://www.tmsystem.org">
+            <img src="img/partner2.png" alt="partner2" class="img-rounded">
+        </a>
     </div>
 </div>
     
@@ -233,7 +245,7 @@
     
 <div id="contatti" class="row text-center">
     <div class="col-xs-12 col-md-12">
-        <h2>contatti</h2>
+        <h2 class="titlez">contatti</h2>
     </div>
     <div id="sedi" class="col-xs-12 col-md-12">
         <address>
@@ -244,6 +256,30 @@
         </address>
         
     </div>
+    
+    
+    
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <a href="https://www.facebook.com/profile.php?id=100005528834809&fref=ts">
+            <img src="img/social/facebook.png" alt="facebook">
+        </a>
+        <a href="#">
+            <img src="img/social/twitter.png" alt="twitter">
+        </a>
+        <a href="http://it.linkedin.com/pub/accademia-2013/99/711/272">
+            <img src="img/social/linkedin.png" alt="linkedin">
+        </a>    
+        <a href="#">
+            <img src="img/social/instagram.png" alt="instagram">
+        </a>
+        <a href="#">
+            <img src="img/social/googlep.png" alt="googleplus">
+        </a>
+    </div>
+    
+    
+    
+    
     <div class="col-xs-12 col-md-12">
         <p>Ci trovi a Serravalle, Corso General Cantore 19, 38061  (TN)</p>
         <div id="map_canvas">

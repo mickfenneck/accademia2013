@@ -20,7 +20,7 @@ body {
 }
 
 #headline {
-    background: url(../img/pantone.jpg) no-repeat center center fixed;
+    background: url(../img/pantone2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -63,17 +63,8 @@ h1,h2 {
     }
 }
 
-#menu-nav {
-    background-color:rgba(210,210,210,0.7);
-    color:black;
-}
-
 #menu-nav .navbar-brand {
     text-transform:uppercase;
-}
-
-#menu-nav a {
-    color:black;
 }
 
 #map_canvas {

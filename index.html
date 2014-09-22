@@ -6,11 +6,13 @@
     <title>accademia 2013 - restauri pitture</title>
     <!--stylesheets-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pageloader.css">
     <link rel="stylesheet" href="css/style.css">
     
     
     <script type="text/javascript" src="./js/jquery.min.js" async></script>
     <script type="text/javascript" src="./js/bootstrap.min.js" async></script>
+    <script type="text/javascript" src="./js/pace2.js" async></script>
     
     
     <!--OpenGraph Protocol-->
@@ -66,12 +68,40 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+    
+    <!--Arrow animation-->
+    <script>
+        $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+    </script>
 </head>
 
 <body>
+    
+<!--[if lt IE 8]>
+<p class="chromeframe">You are using an
+    <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> or
+    <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.
+</p>
+<![endif]-->
 
     
 <div class="container-fluid">    
+    
+<div id="loading"></div>
 
 <!--menu navbar-->
 <nav id="menu-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -103,17 +133,22 @@
 <div id="headline" class="row text-center">
     <div id="headcont">
         <div class="col-xs-12 col-md-12">
-            <h1>accademia2013</h1>
-            <!--<img id="logo" src="img/logo.png" alt="accademia 2013, restauri pitture">-->
-            <h2>restauri ~ pitture</h2>
+            <h1> Accademia2013</h1>
+            <img id="logo" src="img/logo.png" alt="accademia 2013, restauri pitture" />
+            <h2 id="subt">restauri ~ pitture</h2>
         </div>
         
     </div>
+    <div class="arrow">
+            <a href="#azienda">
+                <img id="freccia" src="img/arrow.png" alt="arrow"/>
+            </a>
+        </div>
 </div>
     
 <div id="azienda" class="row text-center">
     <div class="col-xs-12 col-md-12">
-        <h2 class="titlez">azienda</h2>
+        <h2 class="titlez">Azienda</h2>
     </div>  
     <div class="col-xs-12 col-md-6">
         <img src="img/azienda.png" alt="azienda">
@@ -126,7 +161,7 @@
     
 <div id="portfolio" class="row text-center">
     <div class="col-xs-12 col-md-12">
-        <h2 class="titlez">portfolio</h2>
+        <h2 class="titlez">Portfolio</h2>
     </div>  
     <div class="imageport col-xs-12 col-sm-6 col-md-4">
         <img src="img/port1.jpg" alt="portfolio1" class="img-rounded">
@@ -244,7 +279,7 @@
     
 <div id="partner" class="row text-center">
     <div class="col-xs-12 col-md-12">
-        <h2 class="titlez">partner</h2>
+        <h2 class="titlez">Partner</h2>
     </div>
     <div class="imagep col-xs-12 col-md-6">
         <a href="http://www.formatt13.it">
@@ -262,7 +297,7 @@
     
 <div id="contatti" class="row text-center">
     <div class="col-xs-12 col-md-12">
-        <h2 class="titlez">contatti</h2>
+        <h2 class="titlez">Contatti</h2>
     </div>
     <div id="sedi" class="col-xs-12 col-md-12">
         <address>
@@ -306,7 +341,7 @@
     
 <div id="footer" class="row text-center">
     <div id="txtfooter" class="col-xs-12 col-md-12">
-        ACCADEMIA 2013 srl - Sede Legale Via Mosè Bianchi, 71 - 20149 Milano -  P.I. 02284220221
+        <p>ACCADEMIA 2013 srl - Sede Legale Via Mosè Bianchi, 71 - 20149 Milano -  P.I. 02284220221</p>
     </div>
 </div>
 </div>

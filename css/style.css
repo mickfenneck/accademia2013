@@ -1,7 +1,6 @@
 /* fonts */
-@import url(http://fonts.googleapis.com/css?family=Balthazar);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Raleway:200);
+@import url(http://fonts.googleapis.com/css?family=Tangerine);
 
 html {
   min-height:100%;
@@ -18,10 +17,14 @@ body {
   text-rendering: optimizeLegibility;
   margin:0px;
 }
-#headline {
+.container-fluid {
     min-height:100%;
     height:100%;
-    background: url(../img/back.jpg) no-repeat center center fixed;
+}
+
+#headline {
+    height:100%;
+    background: url(../img/back2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,22 +37,36 @@ body {
     height:100%;
 }
 
+#headline h1, 
+#subt {
+    color: #ececec;
+    /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+    font-family: 'Tangerine', coursive;
+}
+
 #headline h1 {
-    color: #ececec;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    /*font-family: 'Balthazar', serif;*/
+    font-size:60px;
 }
 
-#headline h2 {
-    color: #ececec;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    /*font-family: 'Open Sans', sans-serif;*/
+#subt { 
+    font-size:50px;
 }
 
-#headline img {
-    width:200px;
-    height:auto;
+@-webkit-keyframes bottom{0%,100% {-webkit-transform:translate(0,-20px);-moz-transform:translate(0,-20px);-o-transform:translate(0,-20px);-ms-transform:translate(0,-20px);transform:translate(0,-20px)}50%{-webkit-transform:translate(0,-35px);-moz-transform:translate(0,-35px);-o-transform:translate(0,-35px);-ms-transform:translate(0,-35px);transform:translate(0,-35px)}}
+
+@keyframes bottom {0%,100% {-webkit-transform:translate(0,-20px);-moz-transform:translate(0,-20px);-o-transform:translate(0,-20px);-ms-transform:translate(0,-20px);transform:translate(0,-20px)}50%{-webkit-transform:translate(0,-35px);-moz-transform:translate(0,-35px);-o-transform:translate(0,-35px);-ms-transform:translate(0,-35px);transform:translate(0,-35px)}}
+
+.arrow {
+    position:absolute;
+    bottom:5px;
+    text-align:center;
+    width:100%;
+    -webkit-animation:bottom 2s infinite;
+    animation:bottom 2s infinite;
 }
+
+
+
 
 #incipit {
     background-color:rgba(230,230,230,0.5);
@@ -73,7 +90,7 @@ body {
 }
 
 h1,h2 {
-    text-transform:uppercase;
+    font-family: 'Tangerine', coursive;
 }
 
 #menu-nav .navbar-brand {
@@ -96,6 +113,11 @@ h1,h2 {
     vertical-align:middle;
 }
 
+#txtfooter p {
+    font-size:10px;
+}
+
+
 #headline, #azienda,
 #portfolio, #galleria, 
 #partner, #contatti {
@@ -112,11 +134,27 @@ h1,h2 {
 
 #contatti {
     padding-top:80px;
+    
+}
+
+#txtfooter {
+    line-height:50px;
 }
 
 #headline {
     padding-top:30px;
     padding-bottom:30px;
+}
+
+#loading {
+    z-index:300;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.7);
+
 }
 
 
@@ -125,21 +163,31 @@ h1,h2 {
         font-size:20px;
     }
     #headline h1 {
+        font-size: 130px;
+    }
+    #subt {
         font-size: 70px;
     }
-    #headline h2 {
-        font-size: 50px;
-    }
-    #headline img {
-        width:500px;
+    #logo {
+        width:350px;
         height:auto;
     }
     .titlez {
-        font-size:68px;
+        font-size:100px;
     }
     #azienda img {
         width: 510px;
         height:auto;
     }
+
+#txtfooter p {
+    font-size:14px;
 }
 
+}
+
+@media (min-width: 900px) { 
+    #txtfooter p {
+    font-size:17px;
+}
+}

@@ -12,6 +12,17 @@
     <script type="text/javascript" src="./js/jquery.min.js" async></script>
     <script type="text/javascript" src="./js/bootstrap.min.js" async></script>
     
+    
+    <!--OpenGraph Protocol-->
+    <meta property="og:title" content="accademia2013.it: restauri, pitture" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.accademia2013.it" />
+    <meta property="og:image" content="http://www.accademia2013.it/img/social.jpg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:description" content="Accademia2013 srl è una ditta che opera nel settore edilizio e dell’ interior, inizialmente occupandosi prevalentemente di tinteggiature interne ed esterne e successivamente ampliando la propria attività anche nel campo dei restauri, delle decorazioni e dell’edilizia." /> 
+    
+    
     <!--menu animation-->
     <script>
     $(document).ready(function(){
@@ -46,6 +57,12 @@
             mapTypeId: google.maps.MapTypeId.ROADMAP            
         }
         var map = new google.maps.Map(map_canvas, map_options)
+
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(45.80741, 11.01662),    
+            map: map,
+            title: 'Accademia 2013'
+        });
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
@@ -54,7 +71,7 @@
 <body>
 
     
-    
+<div class="container-fluid">    
 
 <!--menu navbar-->
 <nav id="menu-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -87,7 +104,7 @@
     <div id="headcont">
         <div class="col-xs-12 col-md-12">
             <h1>accademia2013</h1>
-            <img id="logo" src="img/logo.png" alt="accademia 2013, restauri pitture">
+            <!--<img id="logo" src="img/logo.png" alt="accademia 2013, restauri pitture">-->
             <h2>restauri ~ pitture</h2>
         </div>
         
@@ -101,7 +118,7 @@
     <div class="col-xs-12 col-md-6">
         <img src="img/azienda.png" alt="azienda">
     </div>
-    <div class="col-xs-12 col-md-6">
+    <div id="testoaz" class="col-xs-12 col-md-6">
         <p>Accademia2013 srl è una ditta che opera nel settore edilizio e dell’ interior, inizialmente occupandosi prevalentemente di tinteggiature interne ed esterne e successivamente ampliando la propria attività anche nel campo dei restauri, delle decorazioni e dell’edilizia, nel rispetto dei budget e dei tempi d’intervento preventivamente concordati con la Committenza.</p>
         <p>Da sempre si avvale di fornitori e collaboratori esperti e utilizza solo materiali di alta qualità, in grado di soddisfare qualsiasi tipo di richiesta pervenuta sia da privati sia da enti pubblici e commerciali. Pur essendo un’ azienda giovane e dinamica, puntualmente pronta a sperimentazioni, idee innovative e nuove tecnologie, garantisce affidabilità, precisione e massima serietà in ogni sua commessa.</p>
     </div>
@@ -158,13 +175,13 @@
         <div class="item active">
           <img src="./img/slides/01.jpg" alt="0">
           <div class="carousel-caption">
-            <p>finitura elastomerica</p>
+            <p>finitura silossanica</p>
           </div>
         </div>
         <div class="item">
           <img src="./img/slides/02.jpg" alt="1">
           <div class="carousel-caption">
-            <p>finitra silossanica</p>
+            <p>finitra elastomerica</p>
           </div>
         </div>
         <div class="item">
@@ -260,7 +277,7 @@
     
     
     <div class="col-xs-12 col-md-8 col-md-offset-2">
-        <a href="https://www.facebook.com/profile.php?id=100005528834809&fref=ts">
+        <a href="https://www.facebook.com/profile.php?id=100005528834809">
             <img src="img/social/facebook.png" alt="facebook">
         </a>
         <a href="#">
@@ -269,10 +286,10 @@
         <a href="http://it.linkedin.com/pub/accademia-2013/99/711/272">
             <img src="img/social/linkedin.png" alt="linkedin">
         </a>    
-        <a href="#">
+        <a href="http://instagram.com/accademia2013srl">
             <img src="img/social/instagram.png" alt="instagram">
         </a>
-        <a href="#">
+        <a href="https://plus.google.com/u/0/117411205551719325041">
             <img src="img/social/googlep.png" alt="googleplus">
         </a>
     </div>
@@ -288,11 +305,23 @@
 </div>
     
 <div id="footer" class="row text-center">
-    <div class="col-xs-12 col-md-12">
-        <p>ACCADEMIA 2013 srl - Sede Legale Via Mosè Bianchi, 71 - 20149 Milano -  P.I. 02284220221</p>
-    <div class="col-xs-12 col-md-12">
+    <div id="txtfooter" class="col-xs-12 col-md-12">
+        ACCADEMIA 2013 srl - Sede Legale Via Mosè Bianchi, 71 - 20149 Milano -  P.I. 02284220221
+    </div>
 </div>
+</div>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-53998088-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
 </body>
 
 </html>
